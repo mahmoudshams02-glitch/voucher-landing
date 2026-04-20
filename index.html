@@ -4,17 +4,153 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Voucher Life</title>
+
+<style>
+body {
+margin:0;
+font-family:Arial;
+background:#f5f7f6;
+}
+
+/* HERO */
+.hero {
+background:#18a999;
+color:white;
+padding:40px 20px;
+border-radius:0 0 30px 30px;
+text-align:center;
+}
+
+.btn {
+padding:10px 20px;
+border-radius:25px;
+border:none;
+margin:5px;
+cursor:pointer;
+}
+
+.btn-white {
+background:white;
+color:#18a999;
+}
+
+.btn-outline {
+border:1px solid white;
+color:white;
+background:transparent;
+}
+
+/* SECTION */
+.section {
+padding:20px;
+}
+
+.title {
+font-size:20px;
+margin-bottom:10px;
+}
+
+/* CARDS */
+.cards {
+display:flex;
+gap:10px;
+overflow:auto;
+}
+
+.card {
+background:white;
+padding:15px;
+border-radius:15px;
+min-width:120px;
+text-align:center;
+box-shadow:0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* PARTNERS */
+.partner {
+background:white;
+padding:15px;
+margin-bottom:10px;
+border-radius:15px;
+display:flex;
+justify-content:space-between;
+}
+
+.discount {
+color:#18a999;
+font-weight:bold;
+}
+
+/* CTA */
+.cta {
+background:#18a999;
+color:white;
+padding:30px;
+margin:20px;
+border-radius:20px;
+text-align:center;
+}
+</style>
+
 </head>
 
-<body style="font-family: Arial; text-align:center; background:#18a999; color:white; padding:50px;">
+<body>
 
-<h1>Voucher Life</h1>
-<p>وفر حتى 50% على خدماتك الطبية</p>
+<!-- HERO -->
+<div class="hero">
+<h1>وفر حتى 50% على خدماتك الطبية</h1>
+<p>مستشفيات - معامل - صيدليات - عيادات</p>
 
-<a href="https://wa.me/201007190880" 
-style="background:white; color:#18a999; padding:12px 25px; border-radius:25px; text-decoration:none; display:inline-block; margin-top:20px;">
+<button class="btn btn-white" onclick="window.location.href='https://wa.me/201007190880'">
 اشترك الآن
-</a>
+</button>
+
+<button class="btn btn-outline" onclick="window.location.href='https://play.google.com/store/apps/details?id=com.voucher_life.app'">
+تحميل التطبيق
+</button>
+</div>
+
+<!-- CATEGORIES -->
+<div class="section">
+<div class="title">الفئات الرئيسية</div>
+
+<div class="cards">
+<div class="card">🏥 مستشفيات</div>
+<div class="card">🧪 معامل</div>
+<div class="card">💊 صيدلية</div>
+<div class="card">🩺 عيادات</div>
+</div>
+</div>
+
+<!-- PARTNERS -->
+<div class="section">
+<div class="title">أهم الشركاء</div>
+
+<div class="partner">
+<span>Dar Elezam</span>
+<span class="discount">50%</span>
+</div>
+
+<div class="partner">
+<span>Al Safwa Hospital</span>
+<span class="discount">59%</span>
+</div>
+
+<div class="partner">
+<span>El Borg Labs</span>
+<span class="discount">20%</span>
+</div>
+</div>
+
+<!-- CTA -->
+<div class="cta">
+<h2>ابدأ التوفير الآن</h2>
+<p>احصل على خصومات فورية</p>
+
+<button class="btn btn-white" onclick="window.location.href='https://wa.me/201007190880'">
+تواصل واتساب
+</button>
+</div>
 
 </body>
 </html>
